@@ -1,0 +1,3 @@
+Ошибка: Введённого слова нет в словаре! Количество оставшихся попыток: -1
+ru.yandex.practicum.WordNotFoundInDictionaryException: Введённого слова нет в словаре! Количество оставшихся попыток: -1
+	at ru.yandex.practicum.Wordle.main(Wordle.java:50)
