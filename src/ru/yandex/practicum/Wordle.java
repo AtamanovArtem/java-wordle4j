@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Wordle {
 
-    public static void main(String[] args) throws IOException, WordNotFoundInDictionaryException, lengthWordNotRespondException {
+    public static void main(String[] args) throws IOException, WordNotFoundInDictionaryException, LengthWordNotRespondException {
 
         PrintWriter log = null;
         Scanner scanner = new Scanner(System.in);
@@ -52,10 +52,10 @@ public class Wordle {
                 }
                 try {
                     if (!game.lengthWord(userWord)) {
-                        throw new lengthWordNotRespondException("Длина введенного слова не соответствует условиям!" +
+                        throw new LengthWordNotRespondException("Длина введенного слова не соответствует условиям!" +
                                 " Введите слово длиной в 5 символов!");
                     }
-                } catch (lengthWordNotRespondException exception) {
+                } catch (LengthWordNotRespondException exception) {
                     System.out.println("Произошла ошибка: " + exception.getMessage());
                     log.println("Ошибка: " + exception.getMessage());
                     exception.printStackTrace(log);
