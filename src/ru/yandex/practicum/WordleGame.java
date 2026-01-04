@@ -22,7 +22,7 @@ public class WordleGame {
 
     public boolean checkWord(String userWord) {
         boolean isCorrect = userWord.equals(answer);
-        userInputs.put(steps, userWord); 
+        userInputs.put(steps, userWord);
         return isCorrect;
     }
 
