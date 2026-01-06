@@ -3,8 +3,8 @@ import java.io.PrintWriter;
 import java.util.*;
 
 public class WordleGame {
-    public String answer;
-    public int steps;
+    protected String answer;
+    protected int steps;
     private WordleDictionary dictionary;
     private LinkedHashMap<Integer, String> userInputs;
 
